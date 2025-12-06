@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import profileImg from '../assets/images/profile.jpg';
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative">
       {/* Background Pattern */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800" />
@@ -34,7 +35,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              Hi, I'm{' '}
+              Hi, I'm{' '}<br/>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
                 Rutuja Gaikwad
               </span>
@@ -55,8 +56,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Dynamic Software Engineer with expertise in JavaScript, React.js, and Tailwind CSS.
-              Passionate about creating high-performance, SEO-optimized websites and user-friendly solutions.
+              Software Engineer specializing in React.js, JavaScript, and Tailwind CSS.<br/> I build fast, responsive, and user-friendly websites.
             </motion.p>
             
             <motion.div 
@@ -111,7 +111,7 @@ const Home = () => {
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg"
               >
                 <img
-                  src="/your-image.jpg" // Replace with your actual image path
+                  src={profileImg}
                   alt="Rutuja Gaikwad"
                   className="w-full h-full object-cover"
                 />
