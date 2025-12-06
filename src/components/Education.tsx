@@ -5,7 +5,7 @@ const Education = () => {
   const education = {
     degree: 'Computer Engineer',
     institution: 'MES College of Engineering, Pune',
-    period: '1.06/2019 - 06/2023',
+    period: 'June 2019 - June 2023',
     gpa: 'CGPA - 9.25',
     achievements: [
       {
