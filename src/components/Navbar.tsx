@@ -26,7 +26,7 @@ const Navbar = () => {
             Rutuja Gaikwad
           </Link>
           
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex space-x-4 gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
